@@ -1,0 +1,1 @@
+# Access-parent-scope-in-Angular
