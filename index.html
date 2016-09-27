@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Access parent scope in Angular</title>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js'></script>
+	<script src='parentScope.js'></script>
+</head>
+<body>
+
+	<div ng-app='parentChildCtrl'>
+		<div ng-controller='parentCtrl'>
+			Parent Scope: {{name}};
+			<div ng-controller='childCtrl'>
+				Child Scope: {{name}};<br />
+				Childe Scope access parent scope: {{$parent.name}};<br />
+				If Child Scope has no such variable, it will search its parent scope: {{parentName}};
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
