@@ -1,5 +1,5 @@
 # Access-parent-scope-in-Angular
-In angular, each ng-app has one $rootScope and can has many child $scope.
+In angular, each ng-app has one $rootScope and can have many child $scope.
 
 The child $scope has access to its parent scope by using $parent.
 
